@@ -221,4 +221,16 @@ function runAnimation () {
 	document.documentElement.style.setProperty('--primary-color', primaryColor);
 	document.documentElement.style.setProperty('--secondary-color', secondaryColor);
 
+	gsap.from(".logo > path", {
+		duration: 1,
+		opacity: 0,
+		rotate: 80,
+		transformOrigin: 'center',
+		ease: "power1.inOut",
+		stagger: {
+			from: "end",
+			each: .2
+		}
+	});
+
 })();
