@@ -89,7 +89,7 @@ p {
 .action {
   padding: 1em;
   border-radius: 12px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--secondary-color);
 }
 
 ul {
@@ -113,6 +113,7 @@ ul {
 .logo {
 	opacity: 0;
 	animation: fade 0.7s 0.3s ease-out forwards;
+	overflow: visible;
 }
 
 @keyframes fade {
@@ -122,7 +123,7 @@ ul {
 }
 
 #mc_embed_signup input.button {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   width: 100%;
   margin-top: 1rem;
   padding: 0.6rem 1rem;
@@ -151,7 +152,8 @@ ul {
 	}
 
 	.action {
-    padding: 3em;
+		padding: 3em;
+		border-width: 4px;
   }
 
   .Header_title svg {
