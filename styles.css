@@ -16,9 +16,7 @@ body {
   /*background: chartreuse;*/
   font-size: 20px;
   font-family: Helvetica, sans-serif, sans;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   min-height: 100vh;
 	color: #2b2b2b;
 	border: solid 8px var(--primary-color);
@@ -26,9 +24,10 @@ body {
 
 main {
   max-width: 45em;
-  grid-area: five;
-  flex: 1 1 40em;
-  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 0 2rem;
 }
 
 main > * + * {
@@ -165,7 +164,7 @@ ul {
   margin-bottom: 2rem;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
 	body {
 		border: solid 1rem var(--primary-color);
 	}
@@ -193,5 +192,17 @@ ul {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  header {
+    text-align: center;
+  }
+  .Header_svg {
+    margin-right: 0;
+  }
+  .Header_title > * {
+    width: 100%;
   }
 }
