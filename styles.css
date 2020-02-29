@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  max-width: 40em;
+  max-width: 45em;
   grid-area: five;
   flex: 1 1 40em;
   padding: 0 1rem;
