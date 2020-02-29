@@ -229,7 +229,7 @@ function runAnimation () {
 		ease: "sine.out",
 		stagger: {
 			from: "start",
-			amount: 2,
+			amount: 1,
 		}
 	});
 
