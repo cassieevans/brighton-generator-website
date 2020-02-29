@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Russo+One&display=swap");
 
+:root {
+	--primary-color: #54c4c0;
+	--secondary-color: #a254c4;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,7 +36,7 @@ main > * + * {
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  color: #54c4c0;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -83,7 +88,7 @@ p {
 .action {
   padding: 1em;
   border-radius: 12px;
-  border: 2px solid #54c4c0;
+  border: 2px solid var(--primary-color);
 }
 
 ul {
@@ -99,8 +104,24 @@ ul {
   }
 }
 
+.logo path {
+  fill: none;
+  stroke-linecap: square;
+}
+
+.logo {
+	opacity: 0;
+	animation: fade 0.7s 0.3s ease-out forwards;
+}
+
+@keyframes fade {
+	to {
+		opacity: 1;
+	}
+}
+
 #mc_embed_signup input.button {
-  background-color: #a254c4;
+  background-color: var(--secondary-color);
   width: 100%;
   margin-top: 1rem;
   padding: 0.6rem 1rem;
@@ -126,11 +147,10 @@ ul {
 @media only screen and (min-width: 600px) {
   .action {
     padding: 3em;
-    border: 5px solid #54c4c0;
   }
 
   .Header_title svg {
-    height: 8rem;
+    height: 20rem;
     width: unset;
     padding-right: 1.5rem;
   }
