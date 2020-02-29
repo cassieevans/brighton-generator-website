@@ -80,7 +80,7 @@ p {
 	margin-bottom: 1rem;
 }
 
-.Header_svg:after {
+/* .Header_svg:after {
 	content: '🐴';
 	font-size: 4rem;
 	position: absolute;
@@ -93,7 +93,7 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
+} */
 
 .intro {
   font-weight: 900;
