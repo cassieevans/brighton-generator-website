@@ -224,12 +224,12 @@ function runAnimation () {
 	gsap.from(".logo > path", {
 		duration: 1,
 		opacity: 0,
-		rotate: 80,
+		scale: 0.6,
 		transformOrigin: 'center',
-		ease: "power1.inOut",
+		ease: "sine.out",
 		stagger: {
-			from: "end",
-			each: .2
+			from: "start",
+			amount: 2,
 		}
 	});
 
