@@ -141,7 +141,7 @@ function runAnimation () {
     spreadOfShapes: Math.floor(Math.random() * 30) + 1,
     hue: Math.floor(Math.random() * 360) + 1,
     hueSpread: Math.floor(Math.random() * 30) + 5,
-    strokeWidth: Math.floor(Math.random() * 50) + 10
+    strokeWidth: Math.floor(Math.random() * 40) + 4
 	};
 
 	let p0 = { x: start, y: size };
