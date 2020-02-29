@@ -1,48 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One&display=swap");
+
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	line-height: 1.6em;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6em;
 }
 
 body {
-	/*background: chartreuse;*/
-	font-size: 20px;
-	font-family: Helvetica, sans-serif, sans;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
+  /*background: chartreuse;*/
+  font-size: 20px;
+  font-family: Helvetica, sans-serif, sans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 main {
-	max-width: 40em;
-	grid-area: five;
-	flex: 1 1 40em;
+  max-width: 40em;
+  grid-area: five;
+  flex: 1 1 40em;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-	margin-bottom: 1em;
+main > * + * {
+  margin-top: 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1em;
+}
+
+.Header {
+  padding: 2rem 0;
+}
+
+.Header_title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Header_title h1 {
+  font-family: "Russo One", sans-serif !important;
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 1.3;
+  margin-bottom: 0;
+}
+
+.Header_title svg {
+  height: 8rem;
+  padding-right: 1.5rem;
+}
+
+.intro {
+  font-weight: 900;
+  font-size: 2rem;
 }
 
 .presenter {
-	cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="100" style="font-size: 50px;"><text y="50">👩‍🏫</text></svg>'), auto;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="100" style="font-size: 50px;"><text y="50">👩‍🏫</text></svg>'),
+    auto;
 }
 
 .action {
-	padding: 1em;
-	border: 1px solid coral;
+  padding: 1em;
+  border: 1px solid coral;
 }
 
 ul {
-	padding-left: 1em;
+  padding-left: 1em;
 }
 
 @keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(-360deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
