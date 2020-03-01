@@ -15,7 +15,7 @@ const horsen = new Set()
 const G = 0.05
 const terminalV = 10
 
-const breeds = ["🐎", "🐴", "🏇", "🎠"]
+const breeds = ["🐎", "🐴", "🏇", "🎠", "🦓", "🦄"]
 
 class Horse {
 
@@ -26,7 +26,7 @@ class Horse {
 
 		const element = document.createElement("div")
 		element.classList = "falling-horse"
-		element.innerText = breeds[Math.floor(Math.random() * 4)]
+		element.innerText = breeds[Math.floor(Math.random() * 6)]
 
 		this.size = size
 		this.rotation = rotation
