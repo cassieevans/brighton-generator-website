@@ -15,7 +15,7 @@ const horsen = new Set()
 const G = 0.05
 const terminalV = 10
 
-const breeds = ["🐎", "🐴", "🏇", "🎠", "🦓", "🦄"]
+const breeds = ["🐼"]
 
 class Horse {
 
